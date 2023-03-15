@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>안녕 나의 첫 웹페이지</title>
+    <style> /* 스타일을 동일하게 적용할 것들을 클래스로 묶어내서 한번에 설정 가능 */
+        .big-font {
+            font-size: 30px;
+        }
+        .blue-font {
+            color: blue;
+        }
+    </style>
+    <script>  // 같은 기능을 하는 자바스크립트를 하나의 함수로 묶어서 정의
+        // function helloMyFriend(name) {
+        //     alert('hello, ' + name);
+        // }
+        const calcPlus = (a, b) => {
+
+            // 일반적인 리턴값과 상관 없는 로직들
+            const result = a * b / 10;
+
+            return a+b;
+        }
+    </script> 
+    <!-- 깔끔하게 다른 파일에 정리해두고 가져다 쓸 수 있음 -->
+    <script src="script/hello.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <div><h1>여기 재밌는 것들을 만들어 보자</h1></div>
+    </header>
+    <section style="border:1px solid red; border-radius: 10px; padding:20px;">
+    <!-- <section class="border:1px solid red; border-radius: 10px; padding:20px;"> 도 가능 -->
+        <div class="big-font">여기는 컨텐츠를 보여주는 공간</div>
+        <div class="big-font">여기는 새로운 텍스트나 컨텐츠</div>
+        <div class="big-font">이거는 또 새로운 컨텐츠</div>
+    </section>
+    <section class="content-box" style="margin-top:10px">
+        <button class="btn" onclick="alert('hello')">안녕버튼1</button>
+        <button class="btn" onclick="helloMyFriend('NewJeans')">안녕버튼2</button>
+    </section>
+</body>
+</html>
