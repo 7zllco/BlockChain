@@ -14,12 +14,12 @@
         $(document).ready(function() {
             //sendButton이라는 id를 가진 element를 찾아서 event를 binding해줌
             //이벤트 종류는 onclick이고 이벤트가 발생하면 내가 정의한 함수 실행해줌
-            $("sendButton").click(function(){
+            $("#sendButton").click(function(){
                 const fromAddress = $("#fromAddress").val();
-                $("messageArea").text(fromAddress + "가 보냄");
+                $("#messageArea").text(fromAddress + "가 보냄");
                 alert(fronAddress + "가 보냄");
             });
-            $("searchButton").click(function(){
+            $("#searchButton").click(function(){
                 alert("검색하기");
             });
         })
